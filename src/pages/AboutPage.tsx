@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Sparkles, Palette, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -97,17 +97,17 @@ const AboutPage: React.FC = () => {
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="src\assets\shopping4.jpeg"
                 alt="Custom clothing"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="src\assets\shopping5.jpg "
                 alt="Fashion creativity"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="src\assets\shopping3.jpeg"
                 alt="Fashion design"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
