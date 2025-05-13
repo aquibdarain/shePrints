@@ -2,34 +2,34 @@ import { MoodType, MoodColor } from '../types';
 
 export const moodColorMap: Record<MoodType, MoodColor> = {
   happy: {
-    primary: '#FBBF24', // Yellow
-    secondary: '#F97316', // Orange
-    accent: '#EC4899', // Pink
+    primary: '#f43f5e',
+    secondary: '#fb7185',
+    accent: '#fda4af',
   },
   confident: {
-    primary: '#7C3AED', // Purple
-    secondary: '#4F46E5', // Indigo
-    accent: '#2563EB', // Blue
+    primary: '#7c3aed',
+    secondary: '#8b5cf6',
+    accent: '#a78bfa',
   },
   calm: {
-    primary: '#0EA5E9', // Sky blue
-    secondary: '#14B8A6', // Teal
-    accent: '#10B981', // Emerald
+    primary: '#0ea5e9',
+    secondary: '#38bdf8',
+    accent: '#7dd3fc',
   },
   playful: {
-    primary: '#EC4899', // Pink
-    secondary: '#8B5CF6', // Violet
-    accent: '#F97316', // Orange
+    primary: '#d946ef',
+    secondary: '#e879f9',
+    accent: '#f0abfc',
   },
   energetic: {
-    primary: '#EF4444', // Red
-    secondary: '#F97316', // Orange
-    accent: '#FBBF24', // Yellow
+    primary: '#ef4444',
+    secondary: '#f87171',
+    accent: '#fca5a5',
   },
   relaxed: {
-    primary: '#14B8A6', // Teal
-    secondary: '#0EA5E9', // Sky blue
-    accent: '#8B5CF6', // Violet
+    primary: '#14b8a6',
+    secondary: '#2dd4bf',
+    accent: '#5eead4',
   },
 };
 
