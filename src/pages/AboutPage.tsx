@@ -1,39 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Heart, Sparkles, Palette, Mail, Phone } from 'lucide-react';
+import { ArrowRight, Heart, Sparkles, Palette, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const AboutPage: React.FC = () => {
   return (
     <div className="pt-24 pb-16">
-      <div className="container mx-auto px-4">
-        {/* Hero Section */}
-        <div className="max-w-4xl mx-auto mb-16 text-center">
-          <motion.h1 
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+      {/* Hero Section with Background Image */}
+      <div className="relative h-[60vh] mb-16 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: 'url("https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
+            filter: 'brightness(0.7)'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-transparent" />
+        <div className="container mx-auto px-4 h-full flex items-center relative">
+          <motion.div 
+            className="max-w-2xl text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            About <span className="text-purple-600">ShePrints</span>
-          </motion.h1>
-          <motion.p 
-            className="text-xl text-gray-600 mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            ShePrints was born from a vision to empower women through fashion and self-expression.
-          </motion.p>
-          <motion.div 
-            className="w-24 h-1 bg-purple-600 mx-auto"
-            initial={{ width: 0 }}
-            animate={{ width: 96 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          />
+            <h1 className="text-5xl font-bold mb-6">Own Your Print</h1>
+            <p className="text-xl text-purple-100">
+              We're not just a fashion brand. We're a movement.
+            </p>
+          </motion.div>
         </div>
+      </div>
 
-        {/* Our Mission */}
+      <div className="container mx-auto px-4">
+        {/* Our Story */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -42,9 +41,9 @@ const AboutPage: React.FC = () => {
             viewport={{ once: true }}
           >
             <img 
-              src="https://images.pexels.com/photos/4049990/pexels-photo-4049990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Fashion designer working" 
-              className="rounded-lg shadow-lg object-cover h-full w-full"
+              className="rounded-lg shadow-lg object-cover w-full aspect-4/3"
             />
           </motion.div>
           <motion.div
@@ -52,24 +51,137 @@ const AboutPage: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
+            className="space-y-6"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-              <Heart className="mr-3 h-8 w-8 text-pink-500" />
-              Our Mission
-            </h2>
-            <p className="text-lg text-gray-700 mb-6">
-              At ShePrints, we're dedicated to creating a platform that celebrates women's creativity 
-              and personal style. We believe that fashion should be inclusive, expressive, and empowering.
-            </p>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
+              <p className="text-lg text-gray-700">
+                At ShePrints, we believe every girl and woman deserves to express her unique story — not just through words, but through what she wears. Fashion is personal, and we're here to give you the pen to write your style.
+              </p>
+            </div>
+            
+            <div className="bg-purple-50 p-6 rounded-lg border border-purple-100">
+              <p className="text-gray-700 italic">
+                "Why is it so hard to find clothes with our choice of prints, our emotions, and our identity?"
+              </p>
+              <p className="mt-4 text-gray-700">
+                We heard from countless girls who said:
+              </p>
+              <ul className="mt-2 space-y-2">
+                <li className="text-gray-700">"I want a quote that motivates me."</li>
+                <li className="text-gray-700">"I love anime, but I don't get good quality prints."</li>
+                <li className="text-gray-700">"Why can't I just wear what I design?"</li>
+              </ul>
+            </div>
+            
             <p className="text-lg text-gray-700">
-              Through our platform, we aim to build a community where women can share their unique 
-              perspectives and inspire each other through fashion.
+              That's when we knew — the world doesn't need another fashion brand.
+              It needs a canvas for self-expression.
             </p>
           </motion.div>
         </div>
 
+        {/* What We Do Section with Image Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-24"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-2 gap-4">
+              <img 
+                src="https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Fashion design process"
+                className="rounded-lg shadow-md w-full aspect-square object-cover"
+              />
+              <img 
+                src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Custom clothing"
+                className="rounded-lg shadow-md w-full aspect-square object-cover"
+              />
+              <img 
+                src="https://images.pexels.com/photos/6626967/pexels-photo-6626967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Fashion creativity"
+                className="rounded-lg shadow-md w-full aspect-square object-cover"
+              />
+              <img 
+                src="https://images.pexels.com/photos/6626959/pexels-photo-6626959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Fashion design"
+                className="rounded-lg shadow-md w-full aspect-square object-cover"
+              />
+            </div>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <Palette className="h-6 w-6 text-purple-500" />
+                  What We Do
+                </h3>
+                <p className="text-gray-700">
+                  We give you the power to design your own clothes — choose the print, colors, emotions, quotes, or art — and we'll bring your imagination to life. Whether it's a kurti, lehenga, hoodie, or one-piece, your style will be made with your vibe, your story, and your print.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <Heart className="h-6 w-6 text-purple-500" />
+                  Why We Exist
+                </h3>
+                <p className="text-gray-700">
+                  Because you are your own fashion artist. And it's time the world wore your vision.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <Sparkles className="h-6 w-6 text-purple-500" />
+                  Our Mission
+                </h3>
+                <p className="text-gray-700">
+                  To empower every girl to wear what she truly feels — by blending creativity, emotion, and comfort into every stitch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Who We Serve */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-2xl p-12 mb-24 relative overflow-hidden"
+        >
+          <div className="absolute inset-0 opacity-10">
+            <img 
+              src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Background pattern"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative">
+            <h2 className="text-3xl font-bold mb-6">Who We Serve</h2>
+            <p className="text-xl text-purple-100 mb-8">
+              Young women, students, creators, artists, dreamers — anyone who wants to stop following trends and start creating them.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="bg-white/10 backdrop-blur rounded-lg p-6">
+                <p className="text-xl font-medium">"I designed this."</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-lg p-6">
+                <p className="text-xl font-medium">"I own this."</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-lg p-6">
+                <p className="text-xl font-medium">"This is me."</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Contact Section */}
-        <div className="bg-purple-50 rounded-2xl p-8 md:p-12 mb-24">
+        <div className="bg-purple-50 rounded-2xl p-8 md:p-12">
           <motion.div 
             className="text-center mb-12"
             initial={{ opacity: 0, y: 20 }}
@@ -133,27 +245,6 @@ const AboutPage: React.FC = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </motion.div>
-          </div>
-        </div>
-
-        {/* Direct Contact */}
-        <div className="text-center mb-24">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Direct Contact</h2>
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-            <a
-              href="mailto:almasruffea4@gmail.com"
-              className="flex items-center gap-3 text-gray-700 hover:text-purple-600 transition-colors"
-            >
-              <Mail className="h-6 w-6" />
-              almasruffea4@gmail.com
-            </a>
-            <a
-              href="tel:+919370805845"
-              className="flex items-center gap-3 text-gray-700 hover:text-purple-600 transition-colors"
-            >
-              <Phone className="h-6 w-6" />
-              +91 937 080 5845
-            </a>
           </div>
         </div>
       </div>
