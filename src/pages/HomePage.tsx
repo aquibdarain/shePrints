@@ -62,7 +62,10 @@ const HomePage: React.FC = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Mission</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              At ShePrints, we believe in empowering women through fashion and creativity. Our platform is designed to celebrate individuality and self-expression.
+              At ShePrints, our mission is to empower every woman to become her own fashion designer.
+We believe that clothing should be more than just fabric — it should tell your story, reflect your emotions, and express your individuality.
+
+We’re here to celebrate self-expression, creativity, and the freedom to wear what truly feels you.
             </p>
           </motion.div>
         </div>
