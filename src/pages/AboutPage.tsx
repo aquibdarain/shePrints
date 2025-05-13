@@ -1,13 +1,10 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Sparkles, Palette, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
-
 
 import shopping4 from '../assets/shopping4.jpeg';
 import shopping5 from '../assets/shopping5.jpg';
 import shopping3 from '../assets/shopping3.jpeg';
-
 
 
 const AboutPage: React.FC = () => {
@@ -104,20 +101,23 @@ const AboutPage: React.FC = () => {
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="./../assets/shopping4.jpeg"
-                alt="Custom clothing"
-                className="rounded-lg shadow-md w-full aspect-square object-cover"
-              />
-              <img 
-                src="./../assets/shopping5.jpg"
-                alt="Fashion creativity"
-                className="rounded-lg shadow-md w-full aspect-square object-cover"
-              />
-              <img 
-                src="./../assets/shopping3.jpeg"
-                alt="Fashion design"
-                className="rounded-lg shadow-md w-full aspect-square object-cover"
-              />
+  src={shopping4}
+  alt="Custom clothing"
+  className="rounded-lg shadow-md w-full aspect-square object-cover"
+/>
+
+<img 
+  src={shopping5}
+  alt="Fashion creativity"
+  className="rounded-lg shadow-md w-full aspect-square object-cover"
+/>
+
+<img 
+  src={shopping3}
+  alt="Fashion design"
+  className="rounded-lg shadow-md w-full aspect-square object-cover"
+/>
+
             </div>
             <div className="space-y-8">
               <div>
