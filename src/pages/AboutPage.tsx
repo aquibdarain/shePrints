@@ -4,6 +4,12 @@ import { ArrowRight, Heart, Sparkles, Palette, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 
+import shopping4 from '../assets/shopping4.jpeg';
+import shopping5 from '../assets/shopping5.jpg';
+import shopping3 from '../assets/shopping3.jpeg';
+
+
+
 const AboutPage: React.FC = () => {
   return (
     <div className="pt-24 pb-16">
