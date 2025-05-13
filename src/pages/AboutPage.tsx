@@ -3,6 +3,7 @@ import React from 'react';
 import { ArrowRight, Heart, Sparkles, Palette, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+
 const AboutPage: React.FC = () => {
   return (
     <div className="pt-24 pb-16">
@@ -97,17 +98,17 @@ const AboutPage: React.FC = () => {
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="src\assets\shopping4.jpeg"
+                src="./../assets/shopping4.jpeg"
                 alt="Custom clothing"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="src\assets\shopping5.jpg "
+                src="./../assets/shopping5.jpg"
                 alt="Fashion creativity"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="src\assets\shopping3.jpeg"
+                src="./../assets/shopping3.jpeg"
                 alt="Fashion design"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
