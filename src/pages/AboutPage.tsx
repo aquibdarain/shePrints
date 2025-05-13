@@ -92,7 +92,7 @@ const AboutPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Fashion design process"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
@@ -102,12 +102,12 @@ const AboutPage: React.FC = () => {
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="https://images.pexels.com/photos/6626967/pexels-photo-6626967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Fashion creativity"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
               <img 
-                src="https://images.pexels.com/photos/6626959/pexels-photo-6626959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Fashion design"
                 className="rounded-lg shadow-md w-full aspect-square object-cover"
               />
